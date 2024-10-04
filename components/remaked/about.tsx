@@ -9,6 +9,7 @@ import { Blur } from "./hero"
 import { translations } from "@/hooks/translations"
 
 const Chart = dynamic(() => import("./chart").then((mod) => mod.Chart))
+const ShowDown = dynamic(() => import("./extra-content").then((mod) => mod.Showdown))
 
 export default function About() {
   return (
@@ -167,7 +168,10 @@ function Graphic() {
           </div>
         </div>
       ) : (
-        <></>
+        <ShowDown
+          initStart
+          amount={500}
+        />
       )}
     </GraphicWrapper>
   )
