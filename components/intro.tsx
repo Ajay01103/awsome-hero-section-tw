@@ -4,8 +4,13 @@ import { BorderBeam } from "@/components/border-beam"
 import LeftLine from "@/components/left-line"
 import RightLine from "@/components/right-line"
 import { LazyMotion, m, domAnimation } from "framer-motion"
+import dynamic from "next/dynamic"
 import Link from "next/link"
 import { useState } from "react"
+
+const ReactPlayer = dynamic(() => import("react-player").then((player) => player.default), {
+  ssr: false,
+})
 
 export const leftSvgInfo = [
   {
@@ -246,7 +251,7 @@ export default function Intro() {
   return (
     <article className="flex w-full flex-col items-center justify-center gap-16 border-0 border-solid px-1 pt-2 md:px-16 lg:pt-8 overflow-hidden">
       <div className="relative flex h-fit w-full flex-row items-start justify-center gap-0">
-        <div className="absolute left-[-10%] top-[50%] z-[1] h-[400px] w-[600px] -translate-y-1/2">
+        <div className="absolute left-[-10%] top-[50%] z-[1] h-[400px] w-[600px] -translate-y-1/2 hidden md:block">
           <LinesGenerator
             svgInfo={leftSvgInfo}
             dir="left"
@@ -325,7 +330,7 @@ export default function Intro() {
             </div>
           </button>
         </div>
-        <div className="absolute left-auto right-[-10%] top-[50%] z-[1] h-[400px] w-[600px] -translate-y-1/2">
+        <div className="absolute left-auto right-[-10%] top-[50%] z-[1] h-[400px] w-[600px] -translate-y-1/2 hidden md:block">
           <LinesGenerator
             svgInfo={rightSvgInfo}
             dir="right"
@@ -333,15 +338,15 @@ export default function Intro() {
         </div>
       </div>
       <div className="relative rounded h-full overflow-hidden sm:w-4/5">
-        {/* <ReactPlayer
-          url="/lint/demo.mp4"
-          controls
+        <ReactPlayer
+          url="/demo.mp4"
+          controls={false}
           playing
           muted={true}
           width="100%"
           height="100%"
           loop
-        /> */}
+        />
 
         <BorderBeam
           className="pointer-events-none"
