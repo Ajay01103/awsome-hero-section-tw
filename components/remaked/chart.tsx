@@ -21,6 +21,8 @@ const data = [
 ]
 
 const options = {
+  responsive: true,
+  maintainAspectRatio: false,
   plugins: {
     legend: {
       display: false,
@@ -53,7 +55,7 @@ export function Chart() {
   const backgroundColor = ["#b073d9", color, color]
 
   return (
-    <div className="p-4 rounded-lg w-auto">
+    <div className="p-4 rounded-lg w-full h-60 lg:h-64">
       {isDarkMode !== null && (
         <BarChart
           darkMode={isDarkMode}

@@ -10,9 +10,8 @@
 
 html,
 body {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
-    sans-serif;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   color: #111;
   background: #fff;
   font-variant-numeric: tabular-nums;
@@ -23,11 +22,11 @@ body {
     url(https://grainy-gradients.vercel.app/noise.svg);
 }
 
-html[class~='dark'] {
+html[class~="dark"] {
   background: #111;
 }
 
-html[class~='dark'] #hero {
+html[class~="dark"] #hero {
   background: linear-gradient(to bottom, #111 50%, #2a2044af 100%),
     url(https://grainy-gradients.vercel.app/noise.svg);
 }
@@ -38,8 +37,7 @@ html[class~='dark'] #hero {
 
 .gradient-text {
   --bg-size: 400%;
-  background: linear-gradient(90deg, #efa0a5, #a788ec, #efa0a5) 0 0 /
-    var(--bg-size) 100%;
+  background: linear-gradient(90deg, #efa0a5, #a788ec, #efa0a5) 0 0 / var(--bg-size) 100%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -57,7 +55,7 @@ html[class~='dark'] #hero {
   }
 }
 
-html[class~='dark'] .gradient-text {
+html[class~="dark"] .gradient-text {
   filter: drop-shadow(0px 3.5px #54527b9f);
 }
 
@@ -137,9 +135,8 @@ li > a {
 }
 
 #carbonads {
-  --carbon-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial,
-    sans-serif;
+  --carbon-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+    Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
   --carbon-font-size: 14px;
   --carbon-padding: 1.5ch;
   --carbon-max-char: 20ch;
@@ -226,7 +223,7 @@ li > a {
 .slider::before,
 .slider::after {
   background: linear-gradient(to right, #fff 0%, #ffffff00 100%);
-  content: '';
+  content: "";
   z-index: 2;
   position: absolute;
   height: 100%;
@@ -236,7 +233,7 @@ li > a {
 .dark .slider::before,
 .dark .slider::after {
   background: linear-gradient(to right, #111 0%, #11111100 50%);
-  content: '';
+  content: "";
   z-index: 2;
   position: absolute;
   height: 100%;
@@ -493,9 +490,8 @@ li > a {
   color: rgb(153 27 27 / var(--tw-text-opacity));
 }
 .gw-transition {
-  transition-property: color, background-color, border-color,
-    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
-    backdrop-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -508,9 +504,9 @@ li > a {
   -moz-tab-size: 4;
   -o-tab-size: 4;
   tab-size: 4;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   font-feature-settings: normal;
   width: 100%;
   display: flex;
@@ -547,8 +543,8 @@ li > a {
   opacity: 0.5;
   color: inherit;
 }
-#getWaitlistContainer [role='button'],
-#getWaitlistContainer [type='button'],
+#getWaitlistContainer [role="button"],
+#getWaitlistContainer [type="button"],
 #getWaitlistContainer button {
   white-space: nowrap;
   cursor: pointer;
@@ -559,9 +555,8 @@ li > a {
 #getWaitlistContainer optgroup,
 #getWaitlistContainer select,
 #getWaitlistContainer textarea {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
-    sans-serif;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   font-weight: semibold;
   line-height: inherit;
   color: inherit;
@@ -595,8 +590,7 @@ li > a {
 #getWaitlistContainer input:-webkit-autofill:active,
 #getWaitlistContainer input:-webkit-autofill:focus,
 #getWaitlistContainer input:-webkit-autofill:hover {
-  -webkit-transition: background-color 9999s ease-in-out,
-    color 9999s ease-in-out;
+  -webkit-transition: background-color 9999s ease-in-out, color 9999s ease-in-out;
   transition: background-color 9999s ease-in-out, color 9999s ease-in-out;
 }
 #getWaitlistContainer .app-loading-spinner-svg {
@@ -604,8 +598,7 @@ li > a {
   transform-origin: 50% 50%;
   transition-timing-function: ease;
   transition-property: opacity, transform;
-  animation: 250ms AppLoadingSpinnerShow,
-    0.6s linear infinite SpinnerAnimationRotation;
+  animation: 250ms AppLoadingSpinnerShow, 0.6s linear infinite SpinnerAnimationRotation;
 }
 @keyframes AppLoadingSpinnerShow {
   from {
@@ -627,12 +620,11 @@ li > a {
   opacity: 0.8;
 }
 .focus\:gw-ring-2:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
-    var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
-    calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
-    var(--tw-shadow, 0 0 #0000);
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width)
+    var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width))
+    var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 @media (min-width: 640px) {
   .sm\:gw-mt-4 {
@@ -688,3 +680,4 @@ li > a {
   top: 0;
   left: 0;
 }
+
